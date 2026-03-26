@@ -19,6 +19,9 @@ games = games.drop(columns = ["appid", "primary_genre", "all_tags", "price_usd",
 # drops unnecessary columns
 
 top_games = games.sort_values(by="estimated_owners", ascending = False)
+# makes a variable called top_games with value being the estimated amount of owners (which we will take as fact), then sorting the values from highest
+# to lowest in number (e.g. 0 is last)
+
 print("\n Sorted top games by owner count:")
 
 print(top_games)
